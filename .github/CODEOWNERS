@@ -2,8 +2,10 @@
 # Branch protection must require review from Code Owners for this to be an enforced gate.
 * @PythologyIntelligence
 
-# Security-sensitive surfaces: keep these explicit so GitHub highlights ownership during review.
-.github/workflows/ @PythologyIntelligence
+# Explicitly protect the guardrails themselves.
+.github/ @PythologyIntelligence
+
+# Security-sensitive application surfaces.
 agent_reach/cli.py @PythologyIntelligence
 agent_reach/config.py @PythologyIntelligence
 agent_reach/cookie_extract.py @PythologyIntelligence
