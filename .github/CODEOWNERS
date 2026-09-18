@@ -1,0 +1,15 @@
+# Pythology fork ownership.
+# Branch protection must require review from Code Owners for this to be an enforced gate.
+* @PythologyIntelligence
+
+# Explicitly protect the guardrails themselves.
+.github/ @PythologyIntelligence
+
+# Security-sensitive application surfaces.
+agent_reach/cli.py @PythologyIntelligence
+agent_reach/config.py @PythologyIntelligence
+agent_reach/cookie_extract.py @PythologyIntelligence
+agent_reach/backends/ @PythologyIntelligence
+agent_reach/channels/ @PythologyIntelligence
+pyproject.toml @PythologyIntelligence
+constraints.txt @PythologyIntelligence
